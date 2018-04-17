@@ -1,0 +1,15 @@
+<div class="post">
+  <div class= "postinfo">
+      posted on {{tijd | date: 'shortTime'}} about {{sport}}
+  </div>
+  <p>
+    {{text}}
+  </p>
+  samen met:
+  <ul>
+    <li *ngFor="let aanwezige of aanwezigen">
+      {{aanwezige}}
+    </li>
+  </ul>
+</div>
+
